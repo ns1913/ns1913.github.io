@@ -4,66 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENTRANCE</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent:wght@400;700&family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
-        /* 全体の設定 */
         body {
-            background-color: #050505; /* ほぼ漆黒のダークグレー */
-            color: #e0e0e0; /* 目に優しいオフホワイト */
-            font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif; /* 雰囲気のある明朝体 */
+            background-color: #050505;
+            color: #e0e0e0;
+            
+            /* ▼▼▼ フォント指定を「Shippori Mincho」に変更 ▼▼▼ */
+            font-family: "Manufacturing Consent", "Shippori Mincho", serif;
+            
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh; /* 画面の高さいっぱいに広げる */
+            height: 100vh;
             margin: 0;
             text-align: center;
-            letter-spacing: 0.1em; /* 文字間隔を少し空ける */
+            letter-spacing: 0.15em; /* 文字間隔を少し広めにするとエモい */
         }
 
-        /* サイトタイトルの設定 */
         h1 {
-            font-weight: normal;
-            font-size: 2rem;
+            font-weight: 600; /* 太さを指定 */
+            font-size: 2.5rem; /* 少し大きく */
             margin-bottom: 2rem;
             color: #ffffff;
-            text-shadow: 0 0 10px rgba(138, 43, 226, 0.5); /* 青紫の淡い光 */
+            text-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
         }
 
-        /* 注意書きエリアのデザイン */
         .warning-box {
-            font-size: 0.9rem;
-            line-height: 2.0; /* 行間を広めに */
+            font-size: 0.95rem; /* 少し文字サイズ調整 */
+            line-height: 2.2; /* 行間をたっぷりとる */
             margin-bottom: 3rem;
-            border-top: 1px solid #333;
-            border-bottom: 1px solid #333;
-            padding: 20px;
+            border-top: 1px solid #444; /* 線の色を少し明るく */
+            border-bottom: 1px solid #444;
+            padding: 30px;
             width: 80%;
             max-width: 600px;
+            /* 背景をうっすら透けさせる演出を追加 */
+            background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(20,20,30,0.5), rgba(0,0,0,0));
         }
 
         .accent {
-            color: #8a2be2; /* 青紫のアクセントカラー */
-            font-weight: bold;
+            color: #9d56ff; /* 青紫を少し明るく調整 */
+            font-weight: 600;
         }
 
-        /* ENTERボタンのデザイン */
         .enter-btn {
             display: inline-block;
             padding: 15px 60px;
-            border: 1px solid #8a2be2; /* 青紫の枠線 */
-            color: #8a2be2; /* 青紫の文字 */
-            text-decoration: none; /* 下線を消す */
-            transition: all 0.3s ease; /* アニメーションの速度 */
-            font-family: sans-serif; /* ボタンだけゴシック体にして読みやすく */
-            letter-spacing: 0.2em;
-            font-size: 0.9rem;
+            border: 1px solid #8a2be2;
+            color: #8a2be2;
+            text-decoration: none;
+            transition: all 0.5s ease; /* ふわっと変わるように時間を伸ばす */
+            font-family: sans-serif; /* ボタンだけは読みやすいゴシック体のまま */
+            letter-spacing: 0.25em;
+            font-size: 0.8rem;
         }
 
-        /* マウスを乗せた時の変化 */
         .enter-btn:hover {
-            background-color: #8a2be2; /* 背景を青紫に */
-            color: #000; /* 文字を黒に */
-            box-shadow: 0 0 20px #8a2be2; /* 青紫に発光させる */
+            background-color: #8a2be2;
+            color: #000;
+            box-shadow: 0 0 30px #8a2be2;
         }
     </style>
 </head>
@@ -74,11 +79,11 @@
     <div class="warning-box">
         <p><span class="accent">ATTENTION</span></p>
         <p>
-            このサイトは新野 錯が個人で運営する趣味のイラスト・写真展示サイトです。<br>
-            当サイト内の画像の無断転載・使用を禁じます。<br>
+            当サイトは個人の作品展示室です。<br>
+            静謐と退廃を好みます。<br>
             <br>
-            一部、暴力的な表現（流血表現）を含みます。<br>
-            閲覧は自己責任でお願いします。
+            無断転載・使用はご遠慮ください。<br>
+            一部、流血表現を含みます。
         </p>
     </div>
 
