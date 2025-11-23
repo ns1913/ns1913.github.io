@@ -2,40 +2,87 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>MY ARTWORKS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTRANCE</title>
     <style>
+        /* 全体の設定 */
         body {
-            background-color: #1a1a1a; /* 背景色：ダークグレー */
-            color: #dcdcdc; /* 文字色：薄いグレー */
-            font-family: sans-serif;
+            background-color: #050505; /* ほぼ漆黒のダークグレー */
+            color: #e0e0e0; /* 目に優しいオフホワイト */
+            font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif; /* 雰囲気のある明朝体 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* 画面の高さいっぱいに広げる */
+            margin: 0;
             text-align: center;
-            padding: 50px;
+            letter-spacing: 0.1em; /* 文字間隔を少し空ける */
         }
+
+        /* サイトタイトルの設定 */
         h1 {
-            letter-spacing: 0.2em; /* 文字間隔を広げてお洒落に */
-            border-bottom: 1px solid #555;
+            font-weight: normal;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(138, 43, 226, 0.5); /* 青紫の淡い光 */
+        }
+
+        /* 注意書きエリアのデザイン */
+        .warning-box {
+            font-size: 0.9rem;
+            line-height: 2.0; /* 行間を広めに */
+            margin-bottom: 3rem;
+            border-top: 1px solid #333;
+            border-bottom: 1px solid #333;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .accent {
+            color: #8a2be2; /* 青紫のアクセントカラー */
+            font-weight: bold;
+        }
+
+        /* ENTERボタンのデザイン */
+        .enter-btn {
             display: inline-block;
-            padding-bottom: 10px;
+            padding: 15px 60px;
+            border: 1px solid #8a2be2; /* 青紫の枠線 */
+            color: #8a2be2; /* 青紫の文字 */
+            text-decoration: none; /* 下線を消す */
+            transition: all 0.3s ease; /* アニメーションの速度 */
+            font-family: sans-serif; /* ボタンだけゴシック体にして読みやすく */
+            letter-spacing: 0.2em;
+            font-size: 0.9rem;
         }
-        .art-container {
-            margin-top: 30px;
-        }
-        img {
-            max-width: 80%; /* 画面幅に合わせて縮小 */
-            border: 10px solid #fff; /* 白い枠をつける */
-            box-shadow: 0 0 20px rgba(0,0,0,0.5); /* 影をつける */
-            margin-bottom: 50px;
+
+        /* マウスを乗せた時の変化 */
+        .enter-btn:hover {
+            background-color: #8a2be2; /* 背景を青紫に */
+            color: #000; /* 文字を黒に */
+            box-shadow: 0 0 20px #8a2be2; /* 青紫に発光させる */
         }
     </style>
 </head>
 <body>
 
-    <h1>MY PORTFOLIO</h1>
-    <p>工事中</p>
+    <h1>SITE NAME</h1>
 
-    <div class="art-container">
-        <img src="Kacho-san.jpg" alt="作品1">
+    <div class="warning-box">
+        <p><span class="accent">ATTENTION</span></p>
+        <p>
+            このサイトは新野 錯が個人で運営する趣味のイラスト・写真展示サイトです。<br>
+            当サイト内の画像の無断転載・使用を禁じます。<br>
+            <br>
+            一部、暴力的な表現（流血表現）を含みます。<br>
+            閲覧は自己責任でお願いします。
+        </p>
     </div>
+
+    <a href="gallery.html" class="enter-btn">ENTER</a>
 
 </body>
 </html>
