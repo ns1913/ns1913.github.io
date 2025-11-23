@@ -7,15 +7,14 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manufacturing+Consent:wght@400;700&family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #050505;
             color: #e0e0e0;
             
-            /* ▼▼▼ フォント指定を「Shippori Mincho」に変更 ▼▼▼ */
-            font-family: "Manufacturing Consent", "Shippori Mincho", serif;
+            /* ▼▼▼ 英語フォントを先に書くのがコツ！ ▼▼▼ */
+            font-family: "Cinzel", "Shippori Mincho", serif;
             
             display: flex;
             flex-direction: column;
@@ -24,45 +23,54 @@
             height: 100vh;
             margin: 0;
             text-align: center;
-            letter-spacing: 0.15em; /* 文字間隔を少し広めにするとエモい */
+            letter-spacing: 0.1em;
         }
 
         h1 {
-            font-weight: 600; /* 太さを指定 */
-            font-size: 2.5rem; /* 少し大きく */
+            font-weight: 400;
+            font-size: 3rem; /* タイトルは大きく */
             margin-bottom: 2rem;
             color: #ffffff;
             text-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+            border-bottom: 1px solid #8a2be2; /* 下線を引いてみる */
+            padding-bottom: 10px;
+            letter-spacing: 0.2em; /* 英語フォントは文字間隔を広げると神々しくなる */
         }
 
         .warning-box {
-            font-size: 0.95rem; /* 少し文字サイズ調整 */
-            line-height: 2.2; /* 行間をたっぷりとる */
-            margin-bottom: 3rem;
-            border-top: 1px solid #444; /* 線の色を少し明るく */
-            border-bottom: 1px solid #444;
-            padding: 30px;
+            font-size: 0.9rem;
+            line-height: 2.2;
+            margin-bottom: 4rem;
+            border: 1px solid #333; /* 枠線を細く */
+            padding: 40px;
             width: 80%;
             max-width: 600px;
-            /* 背景をうっすら透けさせる演出を追加 */
-            background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(20,20,30,0.5), rgba(0,0,0,0));
+            background: rgba(20, 20, 20, 0.8); /* 少し背景を濃く */
+        }
+
+        /* 特定の場所だけフォントを変えたい場合はクラスを作る */
+        .jp-text {
+             /* 日本語専用の調整などがあればここに書く */
         }
 
         .accent {
-            color: #9d56ff; /* 青紫を少し明るく調整 */
-            font-weight: 600;
+            color: #9d56ff;
+            font-weight: 700; /* Cinzelの太字を使う */
+            font-size: 1.2rem;
         }
 
         .enter-btn {
             display: inline-block;
-            padding: 15px 60px;
+            padding: 15px 80px; /* 横幅を広く */
             border: 1px solid #8a2be2;
             color: #8a2be2;
             text-decoration: none;
-            transition: all 0.5s ease; /* ふわっと変わるように時間を伸ばす */
-            font-family: sans-serif; /* ボタンだけは読みやすいゴシック体のまま */
-            letter-spacing: 0.25em;
-            font-size: 0.8rem;
+            transition: all 0.5s ease;
+            
+            /* ボタンは英語フォントのカッコよさを全面に出す */
+            font-family: "Cinzel", serif; 
+            font-size: 1.2rem;
+            letter-spacing: 0.3em;
         }
 
         .enter-btn:hover {
@@ -74,13 +82,13 @@
 </head>
 <body>
 
-    <h1>SITE NAME</h1>
+    <h1>PORTFOLIO</h1>
 
     <div class="warning-box">
-        <p><span class="accent">ATTENTION</span></p>
-        <p>
-            当サイトは個人の作品展示室です。<br>
-            静謐と退廃を好みます。<br>
+        <p><span class="accent">WARNING</span></p>
+        
+        <p class="jp-text">
+            当サイトは新野錯個人が運営しています。<br>
             <br>
             無断転載・使用はご遠慮ください。<br>
             一部、流血表現を含みます。
